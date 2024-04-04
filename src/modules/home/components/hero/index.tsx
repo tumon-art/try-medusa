@@ -1,4 +1,3 @@
-import UnderlineLink from "@modules/common/components/underline-link"
 import Image from "next/image"
 
 const Hero = () => {
@@ -13,15 +12,14 @@ const Hero = () => {
           comfort and style - ensuring you&apos;re well-prepared for whatever
           comes your way.
         </p>
-        <UnderlineLink href="/store">Explore products</UnderlineLink>
       </div>
       <Image
-        src="/hero1.jpg"
+        src={`/hero1.jpg`}
         loading="eager"
         priority={true}
         quality={90}
         alt="Photo by @thevoncomplex https://unsplash.com/@thevoncomplex"
-        className="absolute inset-0"
+        className=" bg-red-400 absolute inset-0"
         draggable="false"
         fill
         sizes="100vw"
